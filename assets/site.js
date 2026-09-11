@@ -90,7 +90,11 @@
     foot.appendChild(fw);
     document.body.appendChild(foot);
 
-    document.title = (document.title ? document.title + " · " : "") + (S.siteTitle || S.name || "");
+    // "Publications · Hélder Pinto", but just "Hélder Pinto" on the home page,
+    // whose <title> is already the site name.
+    var base = S.siteTitle || S.name || "";
+    var page = document.title;
+    document.title = (page && page !== base) ? page + " · " + base : base;
   }
 
   /* ---------- home ---------- */
