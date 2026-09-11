@@ -14,13 +14,13 @@ window.CV = {
       years: "2026 – present",
       what:  "Postdoctoral Researcher",
       where: "Department of General & Applied Psychology, Ghent University",
-      note:  "In Daniele Marinazzo's group — higher-order information decomposition of EEG in stroke recovery, funded by FWO grant G080526N"
+      note:  "In Daniele Marinazzo’s group. Higher-order information decomposition of EEG in stroke recovery, funded by FWO grant G080526N"
     },
     {
       years: "2022 – 2025",
       what:  "PhD Research Fellow",
       where: "Centre of Mathematics, Universidade do Porto (CMUP)",
-      note:  "FCT studentship 2022.11423.BD — supervisors Ana Paula Rocha (FCUP) and Luca Faes (UNIPA)"
+      note:  "FCT studentship 2022.11423.BD. Supervisors: Ana Paula Rocha (FCUP) and Luca Faes (UNIPA)"
     },
     {
       years: "2021 – 2022",
