@@ -1,22 +1,38 @@
 /* ============================== TEACHING ==============================
-   ORCID holds nothing about teaching, so this page is yours to fill.
-   Delete any section you don't need — empty ones just say "Nothing here
-   yet", and you can remove Teaching from the nav in assets/site.js if you
-   would rather not have the page at all.
+   Source: CV_HelderPinto.pdf.
    ===================================================================== */
 window.TEACHING = {
-  intro: "TODO: a sentence or two on what you teach and how you approach it.",
+  intro: "I have taught statistics and numerical methods as an invited assistant at the University of Porto, across medicine, artificial intelligence and mathematics programmes.",
 
   courses: [
     {
-      date:  "2021 – 2026",
-      title: "TODO: course name",
-      where: "Teaching assistant · Universidade do Porto",
-      note:  "TODO: what you covered, which programme, roughly how many students."
+      date:  "2026 / 2027",
+      title: "Probability & Statistics",
+      where: "Invited assistant · BSc in Mathematics and Applied Mathematics, Faculty of Sciences, Universidade do Porto"
+    },
+    {
+      date:  "2025 / 2026",
+      title: "Numerical Methods",
+      where: "Invited assistant · BSc in Artificial Intelligence and Data Science, Faculty of Sciences, Universidade do Porto"
+    },
+    {
+      date:  "2023 / 2024",
+      title: "Health Statistical Methods I",
+      where: "Invited assistant · Doctoral Programme in Public Health, Faculty of Medicine, Universidade do Porto"
+    },
+    {
+      date:  "2022 / 2023",
+      title: "Health Statistical Methods I",
+      where: "Invited assistant · Doctoral Programme in Public Health, Faculty of Medicine, Universidade do Porto"
     }
   ],
 
   supervision: [
-    // { date: "2026", title: "Student Name — MSc thesis", where: "Co-supervisor", note: "Topic." }
+    {
+      date:  "May 2026",
+      title: "Mafalda Oliveira — Integrated Master's in Medicine",
+      where: "Co-supervisor, with Celeste Dias (Faculty of Medicine, Universidade do Porto)",
+      note:  "A 10-year review of optimal CPP target therapy in severe traumatic brain injury: pioneering, not adventuring. Final grade 17/20."
+    }
   ]
 };

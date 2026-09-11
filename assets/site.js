@@ -126,8 +126,9 @@
   var TYPE_LABEL = {
     journal: "Journal articles",
     conference: "Conference papers",
-    preprint: "Preprints",
     chapter: "Book chapters",
+    preprint: "Preprints",
+    submitted: "Under submission",
     thesis: "Theses"
   };
 
@@ -169,7 +170,12 @@
 
   function renderPublications(root) {
     var pubs = (window.PUBLICATIONS || []).slice();
-    var types = [];
+
+    // Filter pills follow TYPE_LABEL order, not the order entries happen to
+    // appear in, so adding a paper never reshuffles the controls.
+    var present = {};
+    pubs.forEach(function (p) { present[p.type] = true; });
+    var types = Object.keys(TYPE_LABEL).filter(function (t) { return present[t]; });
     pubs.forEach(function (p) { if (types.indexOf(p.type) < 0) types.push(p.type); });
 
     var bar = el("div", "pub-controls");
