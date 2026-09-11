@@ -7,7 +7,7 @@ window.RESEARCH = {
   themes: [
     {
       title: "Decomposing Information in Physiological Networks",
-      body:  "Transfer entropy measures directed information flow between two processes and returns a single scalar. Partial information decomposition splits that flow into unique, redundant and synergistic contributions from several sources. For multivariate Gaussian processes I derive these measures through state space models, which gives closed-form expressions in the time and frequency domains instead of estimates that need long recordings."
+      body:  "Transfer entropy measures directed information flow between two processes and returns a single scalar. Partial information decomposition splits that flow into unique, redundant and synergistic contributions from several sources. For multivariate Gaussian processes I compute these measures using state space models, which gives closed-form expressions in the time and frequency domains instead of estimates that need long recordings."
     },
     {
       title: "High-Order Interactions Beyond Pairs",
