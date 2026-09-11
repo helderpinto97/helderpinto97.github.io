@@ -27,8 +27,12 @@ window.RESEARCH = {
       body:  "With colleagues in intensive care I apply these methods to plateau waves of intracranial pressure — episodes of sustained pressure elevation in brain-injured patients. Decomposing the information shared between intracranial pressure, blood pressure, heart period and end-tidal CO₂ during these episodes characterises the autonomic response and how cerebral autoregulation is engaged."
     },
     {
-      title: "Brain signals and beyond",
-      body:  "TODO: this is where your Ghent work belongs — EEG, cognition, whatever the postdoc is actually about. I have left it as a placeholder rather than guess. The same methods also travel outside physiology: recent work applies mutual information rate decomposition to causal dependencies between climate indices."
+      title: "Does synergy track recovery after stroke?",
+      body:  "My current work, in Daniele Marinazzo's group at Ghent and with Claus Hilgetag in Hamburg, asks whether higher-order structure in EEG tracks recovery after ischemic stroke. Functional connectivity has been proposed as a prognostic marker for decades, but a recent systematic review found no consistent pattern — and connectivity, being pairwise, cannot see structure that emerges only from the joint distribution of three or more sources. Using the O-information and its local, time-resolved, gradient and spectral forms, I am testing whether the balance between synergy and redundancy shifts from the acute to the chronic stage, and whether that shift tracks motor and cognitive recovery. The analysis runs across several stroke cohorts — acute EEG from Hamburg, chronic data from Dallas, high-density EEG from IRCCS San Camillo — with additional data through EBRAINS. Funded by the Research Foundation – Flanders."
+    },
+    {
+      title: "Methods that travel",
+      body:  "These tools are not specific to physiology. Recent work applies mutual information rate decomposition to causal dependencies between climate indices, which is a useful test of whether a method really measures what it claims or merely suits the data it was built on."
     }
   ],
 

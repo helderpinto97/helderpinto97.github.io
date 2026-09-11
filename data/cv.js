@@ -13,8 +13,8 @@ window.CV = {
     {
       years: "2026 – present",
       what:  "Postdoctoral Researcher",
-      where: "Department of Applied & General Psychology, Ghent University",
-      note:  "TODO: one line on what the postdoc is about."
+      where: "Department of General & Applied Psychology, Ghent University",
+      note:  "In Daniele Marinazzo's group — higher-order information decomposition of EEG in stroke recovery, funded by FWO grant G080526N"
     },
     {
       years: "2022 – 2025",
@@ -58,6 +58,12 @@ window.CV = {
   ],
 
   awards: [
+    {
+      years: "2026 – present",
+      what:  "FWO project grant (G080526N)",
+      where: "Research Foundation – Flanders",
+      note:  "Supports the current postdoctoral work"
+    },
     {
       years: "2022 – 2025",
       what:  "FCT Doctoral Studentship (2022.11423.BD)",

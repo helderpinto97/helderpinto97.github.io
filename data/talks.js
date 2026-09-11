@@ -10,6 +10,13 @@
    ===================================================================== */
 window.TALKS = [
   {
+    date:  "2026",   // TODO: add the month
+    kind:  "Poster",
+    title: "Does synergy track recovery? Higher-order information decomposition of EEG data after stroke",
+    where: "Cutting Gardens, Brussels",
+    note:  "With Claus Hilgetag and Daniele Marinazzo."
+  },
+  {
     date:  "October 2025",
     kind:  "Communication",
     title: "Unveiling the CO₂ dynamics and higher-order interactions in plateau waves of intracranial pressure",

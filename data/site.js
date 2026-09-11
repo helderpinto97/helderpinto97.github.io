@@ -4,7 +4,7 @@
 window.SITE = {
   name:        "Hélder Pinto",
   role:        "Postdoctoral Researcher",
-  affiliation: "Department of Applied & General Psychology, Ghent University",
+  affiliation: "Department of General & Applied Psychology, Ghent University",
   location:    "Ghent, Belgium",
 
   // The one address the whole site uses — footer, Contact page, and the

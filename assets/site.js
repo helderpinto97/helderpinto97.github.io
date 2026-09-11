@@ -129,7 +129,7 @@
     chapter: "Book chapters",
     preprint: "Preprints",
     submitted: "Under submission",
-    thesis: "Theses"
+    thesis: "Thesis"
   };
 
   function isMe(author) {
