@@ -28,7 +28,7 @@ window.TALKS = [
     kind:  "Communication",
     title: "Unraveling causal dependencies in climate indices using mutual information rate decomposition",
     where: "XXVII Congresso da Sociedade Portuguesa de Estatística (SPE)",
-    note:  "With S. Barbosa, Prof. Maria Eduarda Silva and Prof. Ana Paula Rocha."
+    note:  "With Prof. S. Barbosa, Prof. Maria Eduarda Silva and Prof. Ana Paula Rocha."
   },
   {
     date:  "June 2025",

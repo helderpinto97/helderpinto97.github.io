@@ -124,11 +124,11 @@
 
   /* ---------- publications ---------- */
   var TYPE_LABEL = {
-    journal: "Journal articles",
-    conference: "Conference papers",
-    chapter: "Book chapters",
+    journal: "Journal Articles",
+    conference: "Conference Papers",
+    chapter: "Book Chapters",
     preprint: "Preprints",
-    submitted: "Under submission",
+    submitted: "Under Submission",
     thesis: "Thesis"
   };
 
@@ -272,7 +272,7 @@
     }
     cvBlock(root, "Education", cv.education);
     cvBlock(root, "Positions", cv.positions);
-    cvBlock(root, "Awards & grants", cv.awards);
+    cvBlock(root, "Awards & Grants", cv.awards);
     cvBlock(root, "Service", cv.service);
     cvBlock(root, "Skills", cv.skills);
   }
@@ -286,7 +286,7 @@
       root.appendChild(el("p", null, esc(t.body)));
     });
     if (R.software && R.software.length) {
-      root.appendChild(el("h2", null, "Software & data"));
+      root.appendChild(el("h2", null, "Software & Data"));
       var cards = el("div", "cards");
       R.software.forEach(function (s) {
         var c = el("div", "card");
@@ -309,7 +309,7 @@
       renderEntries(root, T.courses);
     }
     if (T.supervision && T.supervision.length) {
-      root.appendChild(el("h2", null, "Student supervision"));
+      root.appendChild(el("h2", null, "Student Supervision"));
       renderEntries(root, T.supervision);
     }
   }
