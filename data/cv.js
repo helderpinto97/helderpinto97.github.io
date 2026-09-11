@@ -11,8 +11,8 @@ window.CV = {
     {
       years: "2026 – present",
       what:  "Postdoctoral Researcher",
-      where: "Ghent University",
-      note:  "TODO: add your department / lab and a line on what you work on."
+      where: "Department of Applied & General Psychology, Ghent University",
+      note:  "TODO: one line on what the postdoc is about."
     },
     {
       years: "2021 – 2026",

@@ -4,7 +4,7 @@
 window.SITE = {
   name:        "Hélder Pinto",
   role:        "Postdoctoral Researcher",
-  affiliation: "Ghent University",
+  affiliation: "Department of Applied & General Psychology, Ghent University",
   location:    "Ghent, Belgium",
 
   // The one address the whole site uses — footer, Contact page, and the
@@ -24,8 +24,7 @@ window.SITE = {
     { label: "ORCID",          href: "https://orcid.org/0000-0002-0455-6466" },
     { label: "Scopus",         href: "https://www.scopus.com/authid/detail.uri?authorId=57404559300" },
     { label: "GitHub",         href: "https://github.com/helderpinto97" },
-    // TODO: replace XXXX with your Scholar id, or delete this line.
-    { label: "Google Scholar", href: "https://scholar.google.com/citations?user=XXXX" }
+    { label: "Google Scholar", href: "https://scholar.google.com/citations?user=tEPGynMAAAAJ&hl=en" }
   ]
 };
 
