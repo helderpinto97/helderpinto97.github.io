@@ -1,0 +1,222 @@
+/* =====================================================================
+   Tokens. The light palette is defined in full on bare :root; the dark
+   blocks redefine only these values, so every component styles through
+   tokens and never through a media query.
+   ===================================================================== */
+:root {
+  --bg:        #f4f5f3;   /* paper, faint green-grey bias */
+  --surface:   #ffffff;
+  --text:      #15181c;   /* ink, blue-biased near-black */
+  --muted:     #565d66;
+  --faint:     #868d96;
+  --rule:      #dfe1de;
+  --accent:    #2f5470;   /* slate blue */
+  --accent-dim:#e6ebef;
+
+  --serif: "Spectral", "Iowan Old Style", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+
+  --max: 44rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:        #14171a;
+    --surface:   #1c2024;
+    --text:      #e6e8e6;
+    --muted:     #a0a7ad;
+    --faint:     #757c83;
+    --rule:      #2b3034;
+    --accent:    #8fb6d2;
+    --accent-dim:#212a32;
+  }
+}
+:root[data-theme="dark"] {
+  --bg:        #14171a;
+  --surface:   #1c2024;
+  --text:      #e6e8e6;
+  --muted:     #a0a7ad;
+  --faint:     #757c83;
+  --rule:      #2b3034;
+  --accent:    #8fb6d2;
+  --accent-dim:#212a32;
+}
+
+/* ---- base ------------------------------------------------------------ */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.62;
+  font-synthesis-weight: none;
+}
+
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+h1, h2, h3 {
+  font-family: var(--serif);
+  font-weight: 600;
+  line-height: 1.2;
+  text-wrap: balance;
+  margin: 0;
+}
+h1 { font-size: 2.15rem; letter-spacing: -0.015em; }
+h2 { font-size: 1.3rem; }
+h3 { font-size: 1.02rem; }
+p  { margin: 0; }
+img { max-width: 100%; }
+
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem; }
+
+/* Page body: one column, spaced by the layout rather than by margins. */
+main .wrap { display: flex; flex-direction: column; gap: 1.1rem; }
+main .wrap > h1 { margin-bottom: .2rem; }
+main .wrap > h2 { margin-top: 1.6rem; }
+
+/* ---- header ---------------------------------------------------------- */
+.site-head {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--bg);
+  border-bottom: 1px solid var(--rule);
+}
+.site-head .wrap {
+  display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap;
+  padding-top: .85rem; padding-bottom: .85rem;
+}
+.brand {
+  margin-right: auto;
+  font-family: var(--serif); font-size: 1.05rem; font-weight: 600;
+  color: var(--text); text-decoration: none;
+}
+.brand:hover { color: var(--accent); }
+
+nav.main { display: flex; gap: 1.05rem; flex-wrap: wrap; }
+nav.main a {
+  font-size: .865rem; color: var(--muted); text-decoration: none;
+  padding-bottom: 2px; border-bottom: 2px solid transparent;
+}
+nav.main a:hover { color: var(--text); }
+nav.main a[aria-current="page"] { color: var(--text); border-bottom-color: var(--accent); }
+
+.theme-toggle {
+  display: grid; place-items: center;
+  width: 28px; height: 28px; border-radius: 50%;
+  border: 1px solid var(--rule); background: var(--surface); color: var(--muted);
+  font-size: .8rem; line-height: 1; cursor: pointer;
+}
+.theme-toggle:hover { color: var(--text); border-color: var(--faint); }
+
+/* ---- page ------------------------------------------------------------ */
+main { padding: 3.25rem 0 4rem; }
+.lede { font-size: 1.06rem; color: var(--muted); }
+
+/* hero */
+.hero { display: flex; gap: 1.9rem; align-items: flex-start; flex-wrap: wrap; margin-bottom: .9rem; }
+.hero .portrait {
+  flex: none; width: 124px; height: 124px;
+  border-radius: 3px; object-fit: cover;
+  background: var(--accent-dim); border: 1px solid var(--rule);
+}
+.hero .intro { flex: 1 1 20rem; min-width: 16rem; display: flex; flex-direction: column; gap: .55rem; }
+.affil { color: var(--muted); font-size: .95rem; }
+
+/* profile links */
+.links { display: flex; flex-wrap: wrap; gap: .45rem; margin: .25rem 0 0; padding: 0; list-style: none; }
+.links a {
+  display: inline-block; padding: .26rem .75rem;
+  font-family: var(--mono); font-size: .75rem; letter-spacing: .01em;
+  text-decoration: none; color: var(--muted);
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 2px;
+}
+.links a:hover { color: var(--accent); border-color: var(--accent); }
+
+/* ---- publications ---------------------------------------------------- */
+.pub-controls { display: flex; gap: .4rem; flex-wrap: wrap; margin-top: .4rem; }
+.pub-controls button {
+  font-family: var(--mono); font-size: .75rem; cursor: pointer;
+  color: var(--muted); background: var(--surface);
+  border: 1px solid var(--rule); border-radius: 2px; padding: .26rem .75rem;
+}
+.pub-controls button:hover { color: var(--text); }
+.pub-controls button[aria-pressed="true"] {
+  color: var(--text); background: var(--accent-dim); border-color: var(--accent);
+}
+
+/* The year is a real grouping key, so it gets a structural marker. */
+.year-head {
+  font-family: var(--mono); font-size: .78rem; color: var(--faint);
+  font-variant-numeric: tabular-nums;
+  margin: 2rem 0 .2rem; padding-bottom: .3rem; border-bottom: 1px solid var(--rule);
+}
+ol.pubs { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.pub { display: flex; flex-direction: column; gap: .12rem; padding: .9rem 0; border-bottom: 1px solid var(--rule); }
+.pub:last-child { border-bottom: none; }
+.pub .title { font-weight: 600; }
+.pub .title a { color: var(--text); text-decoration: none; }
+.pub .title a:hover { color: var(--accent); text-decoration: underline; }
+.pub .authors { color: var(--muted); font-size: .92rem; }
+.pub .authors .me { color: var(--text); font-weight: 600; }
+.pub .venue { color: var(--faint); font-size: .92rem; font-family: var(--serif); font-style: italic; }
+.pub .meta { display: flex; gap: .7rem; flex-wrap: wrap; margin-top: .35rem; font-family: var(--mono); font-size: .72rem; }
+.pub .meta a { color: var(--muted); text-decoration: none; border-bottom: 1px solid var(--rule); }
+.pub .meta a:hover { color: var(--accent); border-color: var(--accent); }
+.tag {
+  margin-left: .45rem; vertical-align: 2px;
+  font-family: var(--mono); font-size: .65rem; letter-spacing: .04em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-dim);
+  border-radius: 2px; padding: .1rem .35rem;
+}
+.empty { color: var(--faint); font-style: italic; }
+
+/* ---- entry lists (talks, teaching, news) ----------------------------- */
+.entry { display: flex; flex-direction: column; gap: .1rem; padding: 1rem 0; border-bottom: 1px solid var(--rule); }
+.entry:last-of-type { border-bottom: none; }
+.entry .when { font-family: var(--mono); font-size: .72rem; color: var(--faint); letter-spacing: .02em; }
+.entry .what { font-weight: 600; }
+.entry .what a { color: var(--text); }
+.entry .where { color: var(--muted); font-size: .92rem; }
+.entry p { margin-top: .3rem; color: var(--muted); font-size: .94rem; }
+
+/* ---- cv / contact rows ----------------------------------------------- */
+.cv-row { display: flex; gap: 1.3rem; padding: .8rem 0; border-bottom: 1px solid var(--rule); }
+.cv-row:last-child { border-bottom: none; }
+.cv-row .years {
+  flex: none; width: 8.5rem; padding-top: .15rem;
+  font-family: var(--mono); font-size: .76rem; color: var(--faint);
+  font-variant-numeric: tabular-nums;
+}
+.cv-row .body { display: flex; flex-direction: column; gap: .1rem; }
+.cv-row .body span { color: var(--muted); font-size: .92rem; }
+@media (max-width: 34rem) {
+  .cv-row { flex-direction: column; gap: .15rem; }
+  .cv-row .years { width: auto; }
+}
+
+/* ---- research: software cards ---------------------------------------- */
+.cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+.card {
+  display: flex; flex-direction: column; gap: .35rem;
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 3px;
+  padding: 1rem 1.1rem;
+}
+.card p { color: var(--muted); font-size: .93rem; }
+
+/* ---- footer ---------------------------------------------------------- */
+footer { margin-top: auto; border-top: 1px solid var(--rule); padding: 1.5rem 0 2.5rem; }
+footer .wrap {
+  display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  font-family: var(--mono); font-size: .74rem; color: var(--faint);
+}
+footer a { color: var(--muted); text-decoration: none; }
+footer a:hover { color: var(--accent); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
