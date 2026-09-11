@@ -1,16 +1,12 @@
 /* ============================ TALKS & POSTERS =========================
    Source: "Communications in International Conferences with Peer Review"
-   in CV_HelderPinto.pdf. The CV doesn't distinguish talks from posters,
-   so everything here is marked "Communication" except the 2022 one, which
-   ORCID records as a poster.
+   in CV_HelderPinto.pdf, with talk/poster confirmed by hand.
 
-   TODO: change `kind` to "Talk" or "Poster" where you remember which.
-
-   kind: "Talk" | "Invited talk" | "Poster" | "Communication" | "Workshop"
+   kind: "Talk" | "Invited talk" | "Poster" | "Workshop"
    ===================================================================== */
 window.TALKS = [
   {
-    date:  "September 2026",   
+    date:  "September 2026",
     kind:  "Poster",
     title: "Does synergy track recovery? Higher-order information decomposition of EEG data after stroke",
     where: "Cutting Gardens, Brussels",
@@ -25,20 +21,20 @@ window.TALKS = [
   },
   {
     date:  "October 2025",
-    kind:  "Communication",
+    kind:  "Talk",
     title: "Unraveling causal dependencies in climate indices using mutual information rate decomposition",
     where: "XXVII Congresso da Sociedade Portuguesa de Estatística (SPE)",
     note:  "With Prof. S. Barbosa, Prof. Maria Eduarda Silva and Prof. Ana Paula Rocha."
   },
   {
     date:  "June 2025",
-    kind:  "Communication",
+    kind:  "Talk",
     title: "Assessment of high-order interactions in dynamic networks: an approach based on conditional information rates",
     where: "International School and Conference on Network Science (NetSci)"
   },
   {
     date:  "June 2024",
-    kind:  "Communication",
+    kind:  "Talk",
     title: "Disentangling high-order cardiorespiratory interactions in postural stress",
     where: "International Conference on Mathematical Analysis and Applications in Science and Engineering (ICMASC)"
   },
