@@ -14,21 +14,21 @@ window.TALKS = [
     kind:  "Poster",
     title: "Does synergy track recovery? Higher-order information decomposition of EEG data after stroke",
     where: "Cutting Gardens, Brussels",
-    note:  "With Claus Hilgetag and Daniele Marinazzo."
+    note:  "With Prof. Claus Hilgetag and Prof. Daniele Marinazzo."
   },
   {
     date:  "October 2025",
     kind:  "Communication",
     title: "Unveiling the CO₂ dynamics and higher-order interactions in plateau waves of intracranial pressure",
     where: "International Symposium on Intracranial Pressure and Brain Monitoring (ICP)",
-    note:  "With Celeste Dias and Ana Paula Rocha."
+    note:  "With Dr. Celeste Dias and Prof. Ana Paula Rocha."
   },
   {
     date:  "October 2025",
     kind:  "Communication",
     title: "Unraveling causal dependencies in climate indices using mutual information rate decomposition",
     where: "XXVII Congresso da Sociedade Portuguesa de Estatística (SPE)",
-    note:  "With S. Barbosa, Maria Eduarda Silva and Ana Paula Rocha."
+    note:  "With S. Barbosa, Maria Eduarda Silva and Prof. Ana Paula Rocha."
   },
   {
     date:  "June 2025",

@@ -14,7 +14,7 @@ window.CV = {
       years: "2026 – present",
       what:  "Postdoctoral Researcher",
       where: "Department of General & Applied Psychology, Ghent University",
-      note:  "In Daniele Marinazzo’s group. Higher-order information decomposition of EEG in stroke recovery, funded by FWO grant G080526N"
+      note:  "In Prof. Daniele Marinazzo’s group. Higher-order information decomposition of EEG in stroke recovery, funded by FWO grant G080526N"
     },
     {
       years: "2022 – 2025",

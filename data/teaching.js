@@ -31,7 +31,7 @@ window.TEACHING = {
     {
       date:  "May 2026",
       title: "Mafalda Oliveira, Integrated Master's in Medicine",
-      where: "Co-supervisor, with Celeste Dias (Faculty of Medicine, Universidade do Porto)",
+      where: "Co-supervisor, with Dr. Celeste Dias (Faculty of Medicine, Universidade do Porto)",
       note:  "A 10-year review of optimal CPP target therapy in severe traumatic brain injury: pioneering, not adventuring. Final grade 17/20."
     }
   ]

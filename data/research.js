@@ -11,7 +11,7 @@ window.RESEARCH = {
     },
     {
       title: "High-order interactions beyond pairs",
-      body:  "Most network physiology still rests on pairwise links, while physiological regulation involves groups of variables acting together. I develop sequential procedures that find which groups of signals in a high-dimensional network genuinely interact at high order, without enumerating every possible subset. The harder question is what those interactions mean for cardiovascular and respiratory control under stress."
+      body:  "Most network physiology still rests on pairwise links, while physiological regulation involves groups of variables acting together. I develop sequential procedures that find which groups of signals in a high-dimensional network interact at high order, without enumerating every possible subset. The harder question is what those interactions mean for cardiovascular and respiratory control under stress."
     },
     {
       title: "Long-range correlations and multiple time scales",
@@ -27,7 +27,7 @@ window.RESEARCH = {
     },
     {
       title: "Does synergy track recovery after stroke?",
-      body:  "My current project, in Daniele Marinazzo's group at Ghent and with Claus Hilgetag in Hamburg, asks whether higher-order structure in EEG tracks recovery after ischemic stroke. Functional connectivity has been proposed as a prognostic marker for decades, yet a recent systematic review found no consistent pattern. Connectivity is pairwise, so it cannot see structure that emerges only from the joint distribution of three or more sources. Using the O-information and its local, gradient and spectral forms, I am testing whether the balance between synergy and redundancy shifts from the acute to the chronic stage, and whether that shift follows motor and cognitive recovery. The analysis runs across several stroke cohorts: acute EEG from Hamburg, chronic data from Dallas, and high-density EEG from IRCCS San Camillo, with further data through EBRAINS. Funded by the Research Foundation, Flanders."
+      body:  "My current project, in Prof. Daniele Marinazzo's group at Ghent and with Prof. Claus Hilgetag in Hamburg, asks whether higher-order structure in EEG tracks recovery after ischemic stroke. Functional connectivity has been proposed as a prognostic marker for decades, yet a recent systematic review found no consistent pattern. Connectivity is pairwise, so it cannot see structure that emerges only from the joint distribution of three or more sources. Using the O-information and its local, gradient and spectral forms, I am testing whether the balance between synergy and redundancy shifts from the acute to the chronic stage, and whether that shift follows motor and cognitive recovery. The analysis runs across several stroke cohorts: acute EEG from Hamburg, chronic data from Dallas, and high-density EEG from IRCCS San Camillo, with further data through EBRAINS. Funded by the Research Foundation, Flanders."
     },
     {
       title: "Methods that travel",
