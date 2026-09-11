@@ -35,7 +35,33 @@ window.RESEARCH = {
     }
   ],
 
-  // TODO: if you release code for any of the methods above, list it here.
+  // MATLAB toolboxes released alongside the papers above.
   // Set to [] to hide the section entirely.
-  software: []
+  software: [
+    {
+      name: "GS-HOIs",
+      href: "https://github.com/helderpinto97/GS-HOIs",
+      body: "Greedy search for high-order interactions in complex networks. Finds the multiplets that carry genuine high-order dependence without enumerating every subset. Implements the method in Mathematics 13(13), 2081."
+    },
+    {
+      name: "MGD_Toolbox",
+      href: "https://github.com/helderpinto97/MGD_Toolbox",
+      body: "Mutual information rate greedy decomposition. Identifies the multiplets that maximise or minimise dynamic coupling, and splits the maximal MIR into unique, redundant and synergistic parts. Used in the ESGCO 2024 paper and the 2025 Springer chapter."
+    },
+    {
+      name: "tv-bCoh",
+      href: "https://github.com/helderpinto97/tv-bCoh",
+      body: "Time-varying block coherence. Extends Geweke's spectral measures of linear dependence to blocks of signals and tracks them over time through TV-VAR models fitted by recursive least squares, separating redundant from synergistic contributions at each time and frequency."
+    },
+    {
+      name: "SID_Toolbox",
+      href: "https://github.com/helderpinto97/SID_Toolbox",
+      body: "Surrogates for information dynamics. Shuffling and IAAFT surrogates with nearest-neighbour estimators of information storage and the mutual information rate, for testing self-dependency, nonlinearity and coupling. Implements the tests in Frontiers in Network Physiology 4, 1385421."
+    },
+    {
+      name: "TE_VARFI_Model",
+      href: "https://github.com/helderpinto97/TE_VARFI_Model",
+      body: "Transfer entropy and partial information decomposition under long memory, using vector autoregressive fractionally integrated models. Implements the framework in Physiological Measurement 43(8), 085004."
+    }
+  ]
 };
