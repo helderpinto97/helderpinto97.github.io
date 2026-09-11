@@ -6,32 +6,32 @@ window.RESEARCH = {
 
   themes: [
     {
-      title: "Decomposing information in physiological networks",
-      body:  "Transfer entropy and the mutual information rate give one number for how much two signals share. That number hides structure. Information can be transferred, stored or modified, and several sources can each contribute a redundant or synergistic part of it. I build decompositions in the time and frequency domains that separate those contributions, so a change in coupling points to a mechanism instead of to coupling in general."
+      title: "Decomposing Information in Physiological Networks",
+      body:  "Transfer entropy measures directed information flow between two processes and returns a single scalar. Partial information decomposition splits that flow into unique, redundant and synergistic contributions from several sources. For multivariate Gaussian processes I derive these measures through state space models, which gives closed-form expressions in the time and frequency domains instead of estimates that need long recordings."
     },
     {
-      title: "High-order interactions beyond pairs",
-      body:  "Most network physiology still rests on pairwise links, while physiological regulation involves groups of variables acting together. I develop sequential procedures that find which groups of signals in a high-dimensional network interact at high order, without enumerating every possible subset. The harder question is what those interactions mean for cardiovascular and respiratory control under stress."
+      title: "High-Order Interactions Beyond Pairs",
+      body:  "Mutual information, interaction information, the redundancy-synergy index and the O-information were built for static variables, and the number of candidate multiplets grows exponentially with network size. I extended them to dynamic processes as the interaction information rate, the redundancy-synergy index rate and the O-information rate gradient, then paired these with a stepwise search that finds the multiplets maximising redundancy or synergy without enumerating every subset. Validation used VAR networks with cascade, common-drive and common-target structure."
     },
     {
-      title: "Long-range correlations and multiple time scales",
-      body:  "Heart period, blood pressure and respiration carry correlations that decay slowly, across scales from a single beat to several minutes. Analyses built on short-memory models bias the estimates. I use fractionally integrated vector autoregressive (VARFI) models to represent short- and long-range dynamics together, which keeps information measures well defined at every scale of interest."
+      title: "Long-Range Correlations and Multiple Time Scales",
+      body:  "Heart period, systolic pressure and respiration carry long-memory correlations that short-memory VAR models cannot represent, which biases information measures at coarse scales. A vector autoregressive fractionally integrated (VARFI) representation handles short-term dynamics and long-range correlations together. Applied to rest, mental and postural stress, it separates the two stressors: postural stress raises redundant and synergistic transfer from pressure and respiration to heart period at short scales, while mental stress raises transfer from pressure to heart period at longer scales."
     },
     {
-      title: "Estimation from short and noisy recordings",
-      body:  "Clinical recordings are short, non-stationary and noisy. Information estimators tend to fail on exactly this kind of data, and to fail without announcing it. Part of my work is making these measures usable: estimators for short time series from coupled dynamic systems, surrogate-data tests that separate genuine nonlinearity from artefacts of the estimator, and frameworks that relate time-domain, spectral and information-theoretic quantities to one another."
+      title: "Estimation from Short and Noisy Recordings",
+      body:  "Clinical recordings are short and non-stationary, and information estimators fail on them without signalling failure. I build surrogate-data tests that use information storage as the discriminating statistic for autodependency and nonlinearity within one process, and the mutual information rate for coupling and nonlinearity within a pair. Applied to heart period and respiratory flow, these tests showed that slow paced breathing raises the predictability of both signals and dampens nonlinearity in their coupling. Related work covers mutual information rate estimation from short time series, and a unified framework linking correlation-based, Granger-causal, spectral and information-theoretic measures under linear and model-free estimators."
     },
     {
-      title: "Neurocritical care and acute brain injury",
-      body:  "With colleagues in intensive care I apply these methods to plateau waves of intracranial pressure, episodes of sustained pressure elevation in brain-injured patients. Decomposing the information shared between intracranial pressure, blood pressure, heart period and end-tidal CO₂ during these episodes shows how the autonomic response behaves and how cerebral autoregulation is engaged."
+      title: "Neurocritical Care and Acute Brain Injury",
+      body:  "With the Neurocritical Care Unit of São João Hospital I apply these methods to plateau waves of intracranial pressure, episodes of sustained pressure elevation in brain-injured patients. Decomposing the information among intracranial pressure, arterial pressure, heart period and end-tidal CO₂ during these episodes characterises the autonomic response and the state of cerebral autoregulation, and tests whether the dysfunction involves higher-order terms rather than pairwise coupling alone."
     },
     {
-      title: "Does synergy track recovery after stroke?",
-      body:  "My current project, in Prof. Daniele Marinazzo's group at Ghent and with Prof. Claus Hilgetag in Hamburg, asks whether higher-order structure in EEG tracks recovery after ischemic stroke. Functional connectivity has been proposed as a prognostic marker for decades, yet a recent systematic review found no consistent pattern. Connectivity is pairwise, so it cannot see structure that emerges only from the joint distribution of three or more sources. Using the O-information and its local, gradient and spectral forms, I am testing whether the balance between synergy and redundancy shifts from the acute to the chronic stage, and whether that shift follows motor and cognitive recovery. The analysis runs across several stroke cohorts: acute EEG from Hamburg, chronic data from Dallas, and high-density EEG from IRCCS San Camillo, with further data through EBRAINS. Funded by the Research Foundation, Flanders."
+      title: "Does Synergy Track Recovery After Stroke?",
+      body:  "EEG functional connectivity has been proposed as a prognostic marker of motor and cognitive recovery after stroke for decades, yet a recent systematic review found no consistent pattern. Connectivity is pairwise, so it cannot capture structure that emerges from the joint distribution of three or more sources. In Prof. Daniele Marinazzo's group at Ghent, with Prof. Claus Hilgetag in Hamburg, I test whether the synergy-redundancy balance shifts from the acute to the chronic stage and tracks recovery, using multivariate O-information, its local and time-resolved form, O-information gradients, transfer entropy decomposition and spectral O-information. The cohorts are acute EEG from UKE Hamburg, chronic data from UT Dallas and high-density EEG from IRCCS San Camillo, with further data through EBRAINS. Funded by the Research Foundation, Flanders."
     },
     {
-      title: "Methods that travel",
-      body:  "These tools apply outside physiology. Recent work uses mutual information rate decomposition on causal dependencies between climate indices, which tests whether a method measures what it claims or merely suits the data it grew up on."
+      title: "Methods That Travel",
+      body:  "The same estimators apply outside physiology. The multiplet search was tested on historical climate data, where it identifies redundant and synergistic groups among the variables governing El Niño and the Southern Oscillation."
     }
   ],
 
