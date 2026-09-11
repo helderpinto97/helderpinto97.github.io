@@ -20,7 +20,7 @@ window.CV = {
       years: "2022 – 2025",
       what:  "PhD Research Fellow",
       where: "Centre of Mathematics, Universidade do Porto (CMUP)",
-      note:  "FCT studentship 2022.11423.BD. Supervisors: Ana Paula Rocha (FCUP) and Luca Faes (UNIPA)"
+      note:  "FCT studentship 2022.11423.BD. Supervisors: Prof. Ana Paula Rocha (FCUP) and Prof. Luca Faes (University of Palermo)"
     },
     {
       years: "2021 – 2022",
@@ -41,7 +41,7 @@ window.CV = {
       years: "2021 – 2026",
       what:  "PhD in Applied Mathematics",
       where: "Faculdade de Ciências, Universidade do Porto (MAP-PDMA)",
-      note:  "High-order dynamical interactions in complex network systems: information-theoretic and parametric modeling approaches · Supervisors: Ana Paula Rocha, Luca Faes"
+      note:  "High-order dynamical interactions in complex network systems: information-theoretic and parametric modeling approaches · Supervisors: Prof. Ana Paula Rocha, Prof. Luca Faes"
     },
     {
       years: "2019 – 2021",
