@@ -24,6 +24,7 @@ window.SITE = {
     { label: "ORCID",          href: "https://orcid.org/0000-0002-0455-6466" },
     { label: "Scopus",         href: "https://www.scopus.com/authid/detail.uri?authorId=57404559300" },
     { label: "GitHub",         href: "https://github.com/helderpinto97" },
+    { label: "Web of Science", href: "https://www.webofscience.com/wos/author/record/ADW-5635-2022" },
     { label: "Google Scholar", href: "https://scholar.google.com/citations?user=tEPGynMAAAAJ&hl=en" }
   ]
 };

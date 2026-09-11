@@ -18,7 +18,7 @@ window.TALKS = [
   },
   {
     date:  "October 2025",
-    kind:  "Communication",
+    kind:  "Poster",
     title: "Unveiling the CO₂ dynamics and higher-order interactions in plateau waves of intracranial pressure",
     where: "International Symposium on Intracranial Pressure and Brain Monitoring (ICP)",
     note:  "With Dr. Celeste Dias and Prof. Ana Paula Rocha."

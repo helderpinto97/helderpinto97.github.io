@@ -79,13 +79,19 @@ window.CV = {
   ],
 
   service: [
-    // TODO: journals you review for, committees, organising roles.
+    {
+      years: "Peer review",
+      what:  "Reviewer, Physiological Measurement",
+      where: "",
+      note:  "Four verified reviews recorded on Web of Science (ResearcherID ADW-5635-2022)"
+    }
+    // TODO: committees, organising roles, other journals not recorded on WoS.
   ],
 
   skills: [
     { years: "Methods",   what: "Information decomposition, transfer entropy, mutual information rate, high-order interactions, VARFI and long-memory modelling, surrogate data analysis, spectral and time–frequency analysis", where: "", note: "" },
     { years: "Domains",   what: "Network physiology, cardiovascular and cardiorespiratory variability, brain–heart interactions, multimodal neuromonitoring, intracranial pressure", where: "", note: "" },
-    { years: "Software",  what: "MATLAB, Python, R", where: "", note: "TODO: adjust to what you actually use" },
-    { years: "Languages", what: "Portuguese (native), English (fluent)", where: "", note: "TODO: add others if relevant" }
+    { years: "Software",  what: "MATLAB, Python, R", where: "", note: "" },
+    { years: "Languages", what: "Portuguese (native), English (fluent)", where: "", note: "" }
   ]
 };
