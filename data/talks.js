@@ -10,7 +10,7 @@
    ===================================================================== */
 window.TALKS = [
   {
-    date:  "2026",   // TODO: add the month
+    date:  "September 2026",   
     kind:  "Poster",
     title: "Does synergy track recovery? Higher-order information decomposition of EEG data after stroke",
     where: "Cutting Gardens, Brussels",
