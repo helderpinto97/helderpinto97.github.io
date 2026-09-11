@@ -54,6 +54,11 @@ window.RESEARCH = {
       body: "Time-varying block coherence. Extends Geweke's spectral measures of linear dependence to blocks of signals and tracks them over time through TV-VAR models fitted by recursive least squares, separating redundant from synergistic contributions at each time and frequency."
     },
     {
+      name: "BIM_toolbox",
+      href: "https://github.com/helderpinto97/BIM_toolbox",
+      body: "Bivariate interaction measures across the time, frequency and information domains, with linear model-based and model-free (binning, permutation, nearest-neighbour) estimators. Accompanies the unified framework in Frontiers in Network Physiology 4, 1687132."
+    },
+    {
       name: "SID_Toolbox",
       href: "https://github.com/helderpinto97/SID_Toolbox",
       body: "Surrogates for information dynamics. Shuffling and IAAFT surrogates with nearest-neighbour estimators of information storage and the mutual information rate, for testing self-dependency, nonlinearity and coupling. Implements the tests in Frontiers in Network Physiology 4, 1385421."
